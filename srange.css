@@ -1,0 +1,47 @@
+.srange-svg {
+}
+
+.srange-bar {
+	stroke: black;
+	stroke-width: 1px;
+	fill: #fff;
+	cursor: crosshair;
+}
+
+.srange-spliter-group {
+	stroke: black;
+	stroke-width: 1px;
+	fill: #fff;
+}
+
+.srange-spliter-polygon {
+	cursor: move;
+	fill: #fff;
+}
+
+.srange-spliter-tip{
+	font: arial;
+	fill: #000;
+	stroke: #000;
+	font-size: 0.8em;
+}
+
+.srange-axis {
+}
+
+.srange-axis-line {
+	stroke: black;
+	stroke-width: 1px;
+}
+
+.srange-axis-tick {
+	stroke: black;
+	stroke-width: 1px;
+}
+
+.srange-axis-tip {
+	font: arial;
+	fill: #000;
+	stroke: #000;
+	font-size: 0.8em;
+}
