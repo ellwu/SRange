@@ -1,14 +1,33 @@
 <html>
   <head>
 	<script src="d3.js"></script>
-	<script src="srange.js"></script>
-	<link href="srange.css" rel="stylesheet"/>
+	<script src="srange2.js"></script>
+	<link href="srange2.css" rel="stylesheet"/>
   </head>
   <body>
 	<div id="demo">
 	</div>
 	<script>
-	  srange.build("div#demo");
+	  var demo = document.getElementById("demo");
+	  
+	  var srange = SRange(demo, null, function(id){
+	  console.info('cursor added ' + id);
+	  }, function(id, x){
+	  console.info('cursor moved ' + id + ' to ' + x);
+	  }, function(id){
+	  console.info('cursor removed ' + id);
+	  });
+
+	  srange.build();
+
+	  
+	  
+	  var c1 = srange.addCursor(15);
+
+	  srange.removeCursor(c1);
+	  var c2 = srange.addCursor(50);
+
+	  srange.moveCursor(c2, 75);
 	</script>
   </body>
 </html>

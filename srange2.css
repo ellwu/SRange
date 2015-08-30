@@ -1,0 +1,45 @@
+.srange {
+	border: 1px solid red;
+}
+
+.srange-axis {
+
+}
+
+.srange-bar {
+	
+}
+
+.srange-bar-rect {
+	stroke: black;
+	stroke-width: 1;
+	fill: #fff;
+}
+
+.srange-tick {
+
+}
+
+.srange-cursor {
+
+}
+
+.srange-cursor-g {
+	stroke: black;
+	stroke-width: 1;
+	fill: #666;
+}
+
+.srange-cursor-t {
+	font-size: 12px;
+}
+
+.srange-tick-line {
+	stroke: #ccc;
+	stroke-width: 1;
+	fill: #000;
+}
+
+.srange-tick-tip {
+	font-size: 12px;
+}
