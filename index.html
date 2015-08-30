@@ -1,33 +1,28 @@
 <html>
   <head>
+	<meta charset="utf-8">
 	<script src="d3.js"></script>
 	<script src="srange2.js"></script>
+	<script src="srulepicker.js"></script>
 	<link href="srange2.css" rel="stylesheet"/>
+	<link href="srulepicker.css" rel="stylesheet"/>
   </head>
   <body>
 	<div id="demo">
 	</div>
 	<script>
 	  var demo = document.getElementById("demo");
+
+	  var options = {
+	  head: ['range', 'rule'],
+	  rules: [
+	  ['01', 'Rule01'],
+	  ['02', 'Rule02'],
+	  ['03', 'Rule03']
+	  ]
+	  };
 	  
-	  var srange = SRange(demo, null, function(id){
-	  console.info('cursor added ' + id);
-	  }, function(id, x){
-	  console.info('cursor moved ' + id + ' to ' + x);
-	  }, function(id){
-	  console.info('cursor removed ' + id);
-	  });
-
-	  srange.build();
-
-	  
-	  
-	  var c1 = srange.addCursor(15);
-
-	  srange.removeCursor(c1);
-	  var c2 = srange.addCursor(50);
-
-	  srange.moveCursor(c2, 75);
+	  var rulePicker = SRulePicker(demo, options);
 	</script>
   </body>
 </html>

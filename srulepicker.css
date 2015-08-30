@@ -1,0 +1,27 @@
+.srulepicker-head {
+	margin-left: 25px;
+}
+
+.srulepicker-head-range {
+	display: inline-block;
+	width: 200px;
+}
+
+.srulepicker-head-rule {
+	display: inline-block;
+	width: 200px;
+}
+
+.srulepicker-body {
+	margin-left: 25px;
+}
+
+.srulepicker-body-range {
+	display: inline-block;
+	width: 200px;
+}
+
+.srulepicker-body-rule {
+	display: inline-block;
+	width: 200px;
+}

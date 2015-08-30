@@ -8,7 +8,7 @@ addFn: function to call when add event occurs
 moveFn: function to call when move event occurs
 removeFn: function to call when remove event occurs
 */
-function SRange(element, spec, addFn, moveFn, removeFn){
+function SRange(element, addFn, moveFn, removeFn){
 
 	var instance = {
 		//ref to parent DOM element
@@ -56,15 +56,9 @@ function SRange(element, spec, addFn, moveFn, removeFn){
 
 			instance.axisContainer = axisContainer;
 
-			instance.createAxisBottomLine();
-
 			instance.createAxisTicks();
 
 			instance.createAxisTips();
-		},
-
-		createAxisBottomLine: function(){
-			
 		},
 
 		createAxisTicks: function(){
